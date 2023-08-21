@@ -20,13 +20,11 @@ const search =() =>{
     }
 }
 
-// const navlinkels = document.querySelectorAll('.nav_link');
-// const windowPathname = window.location.pathname;
+const downloadButtons = document.querySelectorAll('.right');
 
-// navlinkels.forEach(nav_linkEl=>{
-//     const navLinkPathname = new URL(navlinkEl.href).pathname;
-
-//     if((windowPathname === navLinkPathname) || (windowPathname ==='/index.html' && navLinkPathname === '/')) {
-//         nav_linkEl.classList.add('active');
-//     }
-// });
+downloadButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const downloadLink = button.getAttribute('href');
+        window.location.href = downloadLink;
+    });
+});
