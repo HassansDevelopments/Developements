@@ -24,7 +24,7 @@ const downloadButtons = document.querySelectorAll('.right');
 
 downloadButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const downloadLink = button.getAttribute('a');
+        const downloadLink = button.getAttribute('data-download-link');
         window.location.href = downloadLink;
     });
 });
