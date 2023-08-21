@@ -20,7 +20,7 @@ const search =() =>{
     }
 }
 
-const downloadButtons = document.querySelectorAll('.right');
+const downloadButtons = document.querySelectorAll('.download-button');
 
 downloadButtons.forEach(button => {
     button.addEventListener('click', () => {
