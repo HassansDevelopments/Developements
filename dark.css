@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+}
+
+body {
+    background-color: rgb(27, 31, 35);
+}
+
+/* navbar & logo */
+header {
+    align-items: center;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.center h1::selection {
+    color: #ffa500;
+    background: #000;
+}
+
+.center h4::selection,
+.center p::selection {
+    color: #000;
+    background: #ffa500;
+}
+
+.logo {
+    margin-top: 15px;
+    text-align: center;
+    background: linear-gradient(to bottom left, rgb(241, 88, 35), rgb(251, 216, 34), rgb(241, 88, 35), rgb(251, 216, 34), rgb(241, 88, 35));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.logo hr {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to bottom left, rgb(241, 88, 35), rgb(251, 216, 34), rgb(241, 88, 35), rgb(251, 216, 34), rgb(241, 88, 35));
+    margin: 0px 600px;
+}
+
+.logo h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: transparent;
+}
+
+
+nav {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin: 40px 350px;
+    border: 2px solid rgb(255, 165, 61);
+    border-radius: 11px;
+    background-color: transparent;
+}
+
+nav li {
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.1rem;
+    margin: 6px 15px;
+}
+
+nav li a {
+    text-decoration: none;
+    justify-content: center;
+    color: grey;
+}
+
+/* Section Main  */
+.container {
+    padding: 10px 10px;
+    display: flex;
+    width: 96vw;
+    height: auto;
+    background-color: rgb(51, 53, 54);
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+}
+
+
+.left img {
+    object-fit: cover;
+    height: 270px;
+    width: 166px;
+    border-radius: 9px;
+}
+
+.center {
+    padding: 0px 20px;
+    width: 80%;
+    height: 100%;
+    color: orange;
+}
+
+.center h4 {
+    color: rgb(255, 165, 0);
+}
+
+h4 {
+    font-family: 'Baloo Bhai 2', cursive;
+    color: black;
+    font-weight: bold;
+}
+
+.center h1 {
+    font-size: 5vh;
+}
+
+.center p {
+    font-size: 2.5vh;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.right a {
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 7px 5vw;
+    width: auto;
+    border-radius: 9px;
+    border: 1px solid orange;
+    font-size: 1rem;
+    text-decoration: none;
+    color: orange;
+}
+
+.right {
+    cursor: pointer;
+    margin-right: 20px;
+    /* padding: 0px 50px; */
+    /* width: 30%; */
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.right:hover a {
+    background-color: rgb(255, 165, 0);
+    ;
+    color: white;
+    border-color: white;
+    box-shadow: 0 0 20px rgba(251, 215, 34, 0.829);
+    font-family: 'Baloo Bhai 2', cursive;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.main form {
+
+    margin: 25px 350px;
+    width: 50%;
+    border: 2px solid rgba(255, 166, 0, 0.678);
+    border-radius: 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main form input {
+    color: rgb(255, 165, 61);
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 1.3vw;
+    font-weight: 450;
+    padding: 8px 10px;
+    justify-content: center;
+}
+
+.main form i {
+    padding-left: 10px;
+    color: rgba(255, 166, 0, 0.678);
+    ;
+}
+
+#games {
+    padding: 5px 14px;
+    padding-top: 16px;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+header nav li a.active {
+    background: linear-gradient(to bottom left, rgb(251, 216, 34), rgb(241, 88, 35));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
